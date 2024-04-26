@@ -1,9 +1,14 @@
+{% comment %}
 {% extends 'registration/registration_base.html' %}
-{% block title %}DjangoSMS - Login{% endblock title %}
+{% block title %}UAS - Login{% endblock title %}
+{% endcomment %}
+{% load static %}
+
 {% load crispy_forms_tags %}
+
 {% block content %}
 
-<div id="login">
+<!-- <div id="login">
   <div class="login-title blue-gradient"><i class="fas fa-lock"></i>Sign in</div>
 
   <form action="" method="POST" id="login-form">{% csrf_token %}
@@ -24,12 +29,12 @@
   </form>
   <br>
   <a href="{% url 'password_reset' %}" class="link">Forgot password ?</a>
-</div>
+</div> -->
 {% endblock content %}
 
 {% block js %}
 
-<script>
+<!-- <script>
   $('#login-form').submit(function (e) {
     // e.preventDefault();
     $('#login-btn').addClass('disabled')
@@ -57,5 +62,2237 @@
 
     })
   })
-</script>
+</script> -->
 {% endblock %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157908631-1"></script>
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157908631-1');
+  
+</script>
+    <!-- Other External Pages are: Default.aspx, Home.aspx, UM/Um0011.aspx(Self Regstrtn), UM/Um0012.aspx (Rgstrtn Dn), 
+    UM/Um0013.aspx (Forgot password), UM2/Um0008.aspx (set password)-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UAS - Login</title>
+    <link href="{% static 'css/font-face.css' %}" rel="stylesheet" media="all">
+
+    
+    <link href="https://svpnpa.lms.gov.in/Content/website/css/externalPagesStyles?v=OEwfobCkbWMn-1CQjqeS3n48NTiDzxDkgQGnbMtBvmA1" rel="stylesheet" />
+    <link href="Learner/Content/css/mouldifi-core.css" rel="stylesheet">
+
+
+
+
+    
+    <link rel="stylesheet" href="https://svpnpa.lms.gov.in/Content/Arabic-CSS/outer-page.css" type="text/css" id="Style3" />
+    
+
+     <!-- Bootstrap Core CSS -->
+    <link href="https://svpnpa.lms.gov.in/Content/website/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="{% static 'css/font-face.css' %}" rel="stylesheet" media="all"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}"> -->
+  
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"> -->
+  
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> -->
+  
+    
+    <link href="https://svpnpa.lms.gov.in/Content/website/css/animate.css" rel="stylesheet" />
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">    
+    
+
+    <script>
+     //new WOW().init();
+      // Counter 
+      //jQuery('.statistic-counter').counterUp({
+       //   delay: 10,
+        //  time: 2000
+      //});
+    </script>
+
+
+
+    <!-- Custom Fonts -->
+    <link href="https://svpnpa.lms.gov.in/Content/website/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="https://svpnpa.lms.gov.in/Content/website/css/agency.min1.css" rel="stylesheet">
+
+
+    <link href="https://svpnpa.lms.gov.in/Content/CSS/owlCarousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="https://svpnpa.lms.gov.in/Content/CSS/owlCarousel/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="https://svpnpa.lms.gov.in/Content/CSS/owlCarousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <script src="https://svpnpa.lms.gov.in/bundles/scripts/externalPagesScripts?v=TlpDlhj-W8X-X3jhf-92XCncVNJvsqsBaboXvEo3zwg1"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript">
+
+
+ 	   if(window.location.host=="iipa.lms.gov.in" || window.location.host=="iipa.lms.gov.in")
+           {
+	    window.location = "https://iipa.lms.gov.in/default_new.aspx?clientid=108";
+           }
+
+	   if(window.location.host=="dad.lms.gov.in" || window.location.host=="dad.lms.gov.in")
+           {
+	    window.location = "https://dad.lms.gov.in/default_new.aspx?clientid=253";
+           }
+
+	   if(window.location.host=="gidm.lms.gov.in" || window.location.host=="gidm.lms.gov.in")
+           {
+	    window.location = "https://gidm.lms.gov.in/default_new.aspx?clientid=154";
+           }
+
+	   if(window.location.host=="nadp.lms.gov.in" || window.location.host=="nadp.lms.gov.in")
+           {
+	    window.location = "https://nadp.lms.gov.in/default_new.aspx?clientid=262";
+           }
+
+	  if(window.location.host=="ingnaf.lms.gov.in" || window.location.host=="ingaf.lms.gov.in")
+           {
+	    window.location = "https://ingaf.lms.gov.in/default_new.aspx?clientid=182";
+           }
+
+           if(window.location.host=="nfsu.lms.gov.in" || window.location.host=="nfsu.lms.gov.in")
+           {
+	    window.location = "https://nfsu.lms.gov.in/default_new.aspx?clientid=256";
+           }
+
+ 	   if(window.location.host=="ssb.lms.gov.in" || window.location.host=="ssb.lms.gov.in")
+           {
+	    window.location = "https://ssb.lms.gov.in/default_new.aspx?clientid=266";
+           }
+
+ 	   if(window.location.host=="meity.lms.gov.in" || window.location.host=="meity.lms.gov.in")
+           {
+	    window.location = "https://meity.lms.gov.in/default_new.aspx?clientid=156";
+           }
+
+ 	   if(window.location.host=="hbtu.lms.gov.in" || window.location.host=="hbtu.lms.gov.in")
+           {
+	    window.location = "https://hbtu.lms.gov.in/default_new.aspx?clientid=268";
+           }
+
+ 	   if(window.location.host=="upagriculture.lms.gov.in" || window.location.host=="upagriculture.lms.gov.in")
+           {
+	    window.location = "https://upagriculture.lms.gov.in/default_new.aspx?clientid=267";
+           }
+
+           if(window.location.host=="dea.lms.gov.in" || window.location.host=="dea.lms.gov.in")
+           {
+	    window.location = "https://dea.lms.gov.in/default_new.aspx?clientid=270";
+           }
+           if(window.location.host=="tsddcf.lms.gov.in" || window.location.host=="tsddcf.lms.gov.in")
+           {
+	    window.location = "https://tsddcf.lms.gov.in/default_new.aspx?clientid=269";
+           }
+           if(window.location.host=="istm.lms.gov.in" || window.location.host=="istm.lms.gov.in")
+           {
+	    window.location = "https://istm.lms.gov.in/default_new.aspx?clientid=20";
+           }
+           if(window.location.host=="ndrf.lms.gov.in" || window.location.host=="ndrf.lms.gov.in")
+           {
+	    window.location = "https://ndrf.lms.gov.in/default_new.aspx?clientid=19";
+           }
+	   if(window.location.host=="ncvbdc.lms.gov.in" || window.location.host=="ncvbdc.lms.gov.in")
+           {
+	    window.location = "https://ncvbdc.lms.gov.in/default_new.aspx?clientid=264";
+           }
+	   
+		if(window.location.host=="jkpolice.lms.gov.in" || window.location.host=="jkpolice.lms.gov.in")
+           {
+	    window.location = "https://jkpolice.lms.gov.in/default_new.aspx?clientid=275";
+           }
+		   if(window.location.host=="heuk.lms.gov.in" || window.location.host=="heuk.lms.gov.in")
+           {
+	    window.location = "https://heuk.lms.gov.in/default_new.aspx?clientid=276";
+           }
+		   if(window.location.host=="sancharkarmayogi.lms.gov.in" || window.location.host=="sancharkarmayogi.lms.gov.in")
+           {
+	    window.location = "https://sancharkarmayogi.lms.gov.in/default_new.aspx?clientid=63";
+           }
+           if(window.location.host=="mpcz.lms.gov.in" || window.location.host=="mpcz.lms.gov.in")
+           {
+	    window.location = "https://mpcz.lms.gov.in/default_new.aspx?clientid=278";
+           }
+		   if(window.location.host=="10kfpo.lms.gov.in" || window.location.host=="10kfpo.lms.gov.in")
+           {
+	    window.location = "https://10kfpo.lms.gov.in/default_new.aspx?clientid=280";
+           }
+	   if(window.location.host=="negd.lms.gov.in" || window.location.host=="negd.lms.gov.in")
+           {
+	    window.location = "https://negd.lms.gov.in/default_new.aspx?clientid=243";
+           }
+	   if(window.location.host=="uaoa.lms.gov.in" || window.location.host=="uaoa.lms.gov.in")
+           {
+	    window.location = "https://uaoa.lms.gov.in/default_new.aspx?clientid=282";
+           }
+	   if(window.location.host=="pwd.lms.gov.in" || window.location.host=="pwd.lms.gov.in")
+           {
+	    window.location = "https://pwd.lms.gov.in/default_new.aspx?clientid=283";
+           }
+	   if(window.location.host=="rgngwtri.lms.gov.in" || window.location.host=="rgngwtri.lms.gov.in")
+           {
+	    window.location = "https://rgngwtri.lms.gov.in/default_new.aspx?clientid=285";
+           }
+	   if(window.location.host=="nsnis.lms.gov.in" || window.location.host=="nsnis.lms.gov.in")
+           {
+	    window.location = "https://nsnis.lms.gov.in/default_new.aspx?clientid=186";
+           }
+	   if(window.location.host=="dpe.lms.gov.in" || window.location.host=="dpe.lms.gov.in")
+           {
+	    window.location = "https://dpe.lms.gov.in/default_new.aspx?clientid=263";
+           }	
+	   if(window.location.host=="imu.lms.gov.in" || window.location.host=="imu.lms.gov.in")
+           {
+	    window.location = "https://imu.lms.gov.in/default_new.aspx?clientid=245";
+           }
+	   if(window.location.host=="elearn-pmfbykcc.lms.gov.in" || window.location.host=="elearn-pmfbykcc.lms.gov.in")
+           {
+	    window.location = "https://elearn-pmfbykcc.lms.gov.in/default_new.aspx?clientid=287";
+           }
+	   if(window.location.host=="coedm-dmi.lms.gov.in" || window.location.host=="coedm-dmi.lms.gov.in")
+           {
+	    window.location = "https://coedm-dmi.lms.gov.in/default_new.aspx?clientid=289";
+           }	
+	   if(window.location.host=="demo.lms.gov.in" || window.location.host=="demo.lms.gov.in")
+           {
+	    window.location = "https://demo.lms.gov.in/default_new.aspx?clientid=82";
+           }		 
+
+    <!--
+    $(function () {
+        //----- OPEN
+        $('[data-popup-open]').on('click', function (e) {
+            var targeted_popup_class = jQuery(this).attr('data-popup-open');
+            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+            e.preventDefault();
+        });
+
+        //----- CLOSE
+        $('[data-popup-close]').on('click', function (e) {
+            var targeted_popup_class = jQuery(this).attr('data-popup-close');
+            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);l
+
+            e.preventDefault();
+        });
+    });
+
+    $('[data-popup-open]').on('click', function (e) {
+        e.preventDefault();
+    });
+
+        /* Storing user's device details in a variable*/
+        let details = navigator.userAgent;
+
+        /* Creating a regular expression 
+        containing some mobile devices keywords 
+        to search it in details string*/
+        let regexp = /android|iphone|kindle|ipad/i;
+
+        /* Using test() method to search regexp in details
+        it returns boolean value*/
+        let isMobileDevice = regexp.test(details);
+
+        if (isMobileDevice) {
+            window.location = 'Mlanding.html';
+        } else {
+            
+        }
+
+
+function opendocuments(strAction)
+{
+ if (strAction == 'valdoforward/EBrchr') {
+            window.open("WCR/WCREbroucher/GIDMEBrochure.pdf")
+        }
+
+        if (strAction == 'valdoforward/UsrGd') {
+            window.open("WCR/WCRUserGuide/GIDMUserGuideEnglish.pdf")
+        }
+}
+
+    function ActionHandler(strAction) {
+	//debugger;
+
+        //var img_src = $('#divCaptchImage').find('img').attr('src').replace('CaptchaImage.axd?guid=', '').replace('&s=1', '');
+        //window.document.frmDefault.ImgGuid.value = img_src;
+
+        /*if (strAction == 'valdoforward/EBrchr') {
+            window.open("WCR/WCREbroucher/GIDMEBrochure.pdf")
+            return true;
+        }
+
+        if (strAction == 'valdoforward/UsrGd') {
+            window.open("WCR/WCRUserGuide/GIDMUserGuideEnglish.pdf")
+            return true;
+        }*/
+
+        window.document.frmDefault.SelectedCulture.value = $("#SelectedCulture").val();
+        window.document.frmDefault.Password.value = LoginJSUtil(window.document.frmDefault.Password.value);
+
+        if (strAction == 'valdoforward/VldtLgn') {
+
+            if ($('#RememberCredential').is(":checked")) {
+                $('#RememberMe').val('true');
+            }
+            else {
+                $('#RememberMe').val('false');
+            }
+        }
+
+        if (strAction == 'valdoforward/Fdbck') {
+            $(".error").hide();
+            var hasError = false;
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var regex = /^\d*[.]?\d*$/;
+
+            var usernameVal = $("#PickList_Name").val();
+            if (usernameVal == '') {
+                $("#PickList_Name").after('<span class="error" style="color:Red">Please enter your name.</span>');
+                // alert("Please enter your name.")
+                hasError = true;
+            }
+
+            var emailaddressVal = $("#PickList_Email").val();
+            if (emailaddressVal == '') {
+                $("#PickList_Email").after('<span class="error" style="color:Red">Please enter your email id.</span>');
+                //alert("Please enter your email address.")
+                hasError = true; 
+            }
+
+            var fddescriptionVal = $("#PickList_Description").val();
+            if (fddescriptionVal == '') {
+                $("#PickList_Description").after('<span class="error" style="color:Red">Please type your description.</span>');
+                //alert("Please type your description.")
+                hasError = true;
+            }
+
+            //var fdcodeVal = $("#TextCode").val();
+            //if (fdcodeVal == '') {
+            //    $("#TextCode").after('<span class="error" style="color:Red">Country code.</span>');
+            //    //alert("Please enter your std code of your contact number.")
+            //    hasError = true;
+            //}
+
+            //var fdcodeVal = $("#TextCode").val();
+            //if (!regex.test(fdcodeVal)) {
+            //    $("#TextCode").after('<span class="error" style="color:Red">Numeric Only.</span>');
+            //    //alert("Please enter your std code of your contact number.")
+            //    hasError = true;
+            //}
+
+            //var fdcodeVal = $("#TextCode").val();
+            //if (countrycode.test(fdcodeVal)) {
+            //    $("#TextCode").after('<span class="error" style="color:Red"> + Country Code.</span>');
+            //    alert("Please enter your std code of your contact number.")
+            //    hasError = true;
+            //}
+
+            var fdmobileVal = $("#PickList_Mobile").val();
+            if (fdmobileVal == '') {
+                $("#PickList_Mobile").after('<span class="error" style="color:Red">Please enter contact number.</span>');
+                //alert("Please enter your contact number.")
+                hasError = true;
+            }
+
+            var fdmobileVal = $("#PickList_Mobile").val();
+            if (!regex.test(fdmobileVal)) {
+                $("#PickList_Mobile").after('<span class="error" style="color:Red">Numeric Only.</span>');
+                //alert("Please enter your contact number.")
+                hasError = true;
+            }
+
+            else if (!emailReg.test(emailaddressVal)) {
+                $("#PickList_Email").after('<span class="error" style="color:Red">Enter a valid email address.</span>');
+                //alert("Enter a valid email address.")
+                hasError = true;
+            }
+
+
+            if (hasError == true) {
+
+                return false;
+
+            }
+            else {
+                window.document.frmDefault.action = "Control/Controller.aspx?Action=" + strAction;
+                window.document.frmDefault.Mode.value = "open";
+                window.document.frmDefault.submit();
+            }
+
+
+        }
+
+        if (strAction == 'valdoforward/VldtLgn') {
+
+
+            $.ajax({
+                type: 'POST',
+                url: 'session.aspx',
+                //data: {
+                //    "CaptchaUniqueId": img_src,
+                //},
+                success: function (data) {
+debugger;
+			setTimeout(function() {
+				console.log('data fetched');
+                    window.document.frmDefault.action = "Control/Controller.aspx?Action=" + strAction;
+                    window.document.frmDefault.Mode.value = "open";
+                    window.document.frmDefault.submit();
+			}, 3000);
+
+                    
+		
+
+
+                },
+                error: function (xhr, textStatus, errorThrown) {
+
+                    window.document.frmDefault.action = "Control/Controller.aspx?Action=" + strAction;
+                    window.document.frmDefault.Mode.value = "open";
+                    window.document.frmDefault.submit();
+                }
+            });
+
+        }
+        else {
+
+					setTimeout(function() {
+				console.log('data fetched');
+                    window.document.frmDefault.action = "Control/Controller.aspx?Action=" + strAction;
+                    window.document.frmDefault.Mode.value = "open";
+                    window.document.frmDefault.submit();
+			}, 3000);
+
+            //$("#ImgGuid").attr("disabled", "disabled");
+            //$("#CapchaText").attr("disabled", "disabled");
+            //window.document.frmDefault.action = "Control/Controller.aspx?Action=" + strAction;
+            //window.document.frmDefault.Mode.value = "open";
+            //window.document.frmDefault.submit();
+
+        }
+    }
+
+    function EnterKeyPressed(event) {
+        if (event.keyCode == 13) {
+            ActionHandler('valdoforward/VldtLgn');
+        }
+    }
+
+    function ClearError(id) {
+
+    }
+
+    function OpenPolicy() {
+        window.open("Policy.htm");
+    }
+
+    $(document).ready(function () {
+
+        //if (location.protocol !== "https:"){
+        // location.replace(window.location.href.replace("http:","https:"));
+        //}
+
+        //alert(window.location.href);
+        /* if (window.location.href=="https://indianrail.lms.gov.in/" || window.location.href=="http://indianrail.lms.gov.in/")
+         {
+             window.location = "https://indianrail.lms.gov.in/Default.aspx?clientid=6";
+            
+         }*/
+
+        
+
+        //if (window.location.href.indexOf("indianrail.") > -1)
+        var str = window.location.hostname;
+        var res = str.split(".");
+
+        if (res.length > 3) {
+            $('#HomeLink').hide();
+        }
+        else {
+            $('#HomeLink').show();
+        }
+        sessionStorage.clear();
+        var culture = 'en-US';
+        if (culture == 'ar-AE') {
+            jQuery('#Style3').remove();
+        }
+        else {
+            jQuery('#Style1').remove();
+            jQuery('#Style2').remove();
+        }
+
+
+        $('#UserName').attr('placeholder', "EmployeeID/Mobile/Email");
+            $('#Password').attr('placeholder', "Password");
+            
+        $('input, textarea').placeholder({ customClass: 'my-placeholder' });
+
+
+        $('#centered').find('img').css('margin-left', 'auto');
+        $('#centered').find('img').css('margin-left', 'auto')
+        $('#centered').find('img').css('width', '410px')
+
+
+        if (typeof history.pushState !== "undefined") {
+            if (window.history && history.pushState) { // check for history api support
+                window.addEventListener('load', function () {
+
+                    // create history states
+                    history.pushState(-1, null); // back state
+                    history.pushState(0, null); // main state
+                    history.pushState(1, null); // forward state
+                    history.go(-1); // start in main state
+
+                    this.addEventListener('popstate', function (event, state) {
+                        // check history state and fire custom events
+                        if (state = event.state) {
+
+                            event = document.createEvent('Event');
+                            event.initEvent(state > 0 ? 'next' : 'previous', true, true);
+                            this.dispatchEvent(event);
+                            history.go(-state);
+                        }
+                    }, false);
+                }, false);
+            }
+        }
+
+        $('#link_id').click(function () {
+            var externalLink = $("#link_id").text();
+            if (confirm('This will lead you to access external website.')) {
+                    window.open(externalLink, '_blank');
+                    return false;
+                }
+            });
+
+        //$('#divCaptchImage div').removeAttr("style");
+
+        (function ($) {
+            "use strict"; // Start of use strict
+
+            // jQuery for page scrolling feature - requires jQuery Easing plugin
+            $('a.page-scroll').bind('click', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: ($($anchor.attr('href')).offset().top - 50)
+                }, 1250, 'easeInOutExpo');
+                event.preventDefault();
+            });
+
+            // Highlight the top nav as scrolling occurs
+            $('body').scrollspy({
+                target: '.navbar-fixed-top',
+                offset: 51
+            });
+
+            // Closes the Responsive Menu on Menu Item Click
+            $('.navbar-collapse ul li a').click(function () {
+                $('.navbar-toggle:visible').click();
+            });
+
+            // Offset for Main Navigation
+            $('#mainNav').affix({
+                offset: {
+                    top: 100
+                }
+            })
+
+        })(jQuery); // End of use strict
+
+    });
+
+        function PersonalizeCulture() {
+            var cultureCode = $("#SelectedCulture").val();
+            $.post('Control/CultureBoxController.aspx', "SelectedCulture=" + cultureCode, function (data) {
+                location.reload();
+            });
+        }
+        function Reload() {
+            //window.document.frmDefault.action = "Control/Controller.aspx?Action=valdoforward/VldtLgn";
+            //window.document.frmDefault.Mode.value = "open";
+            //window.document.frmDefault.submit();
+
+            //$('div[style="color:red"]').hide();
+
+            location.reload();
+        }
+
+        function SSOLogin() {
+            //window.location.href = 'http://lms.gov.in/SSO/';
+			document.getElementById("myheader").style.display = "block";
+        }
+
+		function hidelogin() {
+
+			document.getElementById("myheader").style.display = "none";
+        }
+
+		function SSOLoginRedirect() {
+            window.location.href = 'http://lms.gov.in/SSO/';
+			
+        }
+
+        /*function to display blinking NEGD, MEITY and Digital India Logo*/
+        function init() {
+            $("#slideshow li").each(function (index) {
+                this.style.backgroundImage = "url('" + this.children[0].src + "')";
+                if (index != 0)
+                    this.style.display = "none";
+            });
+
+            setTimeout(changeImage, 5000);
+        }
+
+        function changeImage() {
+            $curr = $("#slideshow .active");
+            $next = $("#slideshow .active").next();
+
+            if ($next[0] === undefined)
+                $next = $("#slideshow li").eq(0);
+
+            $curr.fadeOut(1000, function () {
+                $next.fadeIn(1000, function () {
+                    $curr.removeClass("active");
+                    $next.addClass("active");
+                    setTimeout(changeImage, 5000);  //change image every 4 seconds
+                });
+            });
+        }
+        $(document).ready(function () { sessionStorage.clear(); });
+
+
+		function Open_Surveypopup() {
+            var x = document.getElementById("divShowSurveryPopUp");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+
+        function Open_popup() {
+            var x = document.getElementById("divShowPopUp");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+
+
+		function hidemenu(){
+			//alert('d');
+			$('.navbar-toggle:visible').click();
+		}
+
+
+
+function getParameterByName(name, url = window.location.href) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+
+                 
+	$(document).ready(function () {
+		 
+		 //debugger;
+ 		if(window.location.host=="cytrainsetu.lms.gov.in" || window.location.host=="cytrainsetu.lms.gov.in")
+           	{
+	  
+           
+var image = document.getElementById("leftlogoimage");
+var anchor = document.getElementById("leftlogoanchor");
+image.src = "Content/HTML/images/CytrainsetuLogoFinal.jpeg"
+anchor.href = "https://cytrainsetu.lms.gov.in";			 
+
+				var redirection = getParameterByName('rdrct')
+				
+				if(redirection == 1){
+				 
+					window.document.frmDefault.action = "Control/Controller.aspx?Action=" + 'valdoforward/NwRgstrtn';
+					window.document.frmDefault.Mode.value = "open";
+					window.document.frmDefault.submit();
+				}
+			
+		}
+				
+	});
+
+
+			
+
+
+        //-->
+    </script>
+
+
+
+    <style type="text/css">
+
+	.navbar-nav>li>a {
+		padding-top: 8px !important;
+		padding-bottom: 8px !important;
+	}
+.btn-xl {
+    font-size: 100%;
+    padding: 2%;
+}
+
+header {
+    background-image: url("{% static 'img/bg.jpeg' %}")
+}
+
+/*.noselect {
+    background:#111 !important;
+    color:#111 !important;
+    text-decoration:none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}*/
+
+#owl-demo .item {
+    background: #3E7294;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    height: 250px !important;
+}
+#owl-demo1 .item {
+    background: #3E7294;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    height: 250px !important;
+}
+
+.customNavigation{
+  text-align: center;
+}
+
+.customNavigation a {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.catalogueDivImage
+{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.catalogueDivText
+{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+/* forpopup */
+
+        h4 {
+    color: #555;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 10px;
+}
+        /* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1400;
+    background:rgba(0,0,0,0.5);
+}
+ 
+/* Inner */
+.popup-inner 
+{
+    max-height: 800px ! important;
+    width:60% ! important;
+    padding:15px;
+    position:absolute;
+    max-width: 700px ! important;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.sub-sites li {
+    border-left: 1px solid #6b6c6f;
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+
+.navbar-custom {
+   background-color: #222;
+    padding: 5px 0;
+    /*opacity:0.9;*/
+    height:70px;
+}
+
+.navbar-custom.affix {
+      background-color: #222;
+    padding: 5px 0;
+    opacity:1;
+}
+
+.carousel {
+    margin-bottom: 0px;
+}
+
+.form-horizontal .control-label {
+    font-size: 15px !important;
+    font-weight: normal;
+   
+}
+
+
+
+/*.btn-xl {
+
+    font-size: 18px;
+    padding: 15px 30px;
+}*/
+
+
+button.close {
+    font-size: 24px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    padding: 4px 10px;
+    top: 1px;
+    text-shadow: 0 1px 0 #333;
+    opacity: .8;
+    height: 30px;
+}
+
+/*a, a:active {
+    color: #111;
+    text-decoration: none;
+    font-size:14px;
+}*/
+
+/*a:hover{
+    text-decoration:none !important;
+    color: #111 !important;
+}*/
+
+
+.link-container {
+        
+    }
+
+    .link-container a {
+       color: #111;
+    text-decoration: none;
+    font-size:17px;
+    }
+
+    .link-container a:hover {
+        text-decoration:none !important;
+    color: #111 !important;
+    }
+
+.timeline-image {
+    width: 113px!important;
+    height: 108px!important;
+    margin-left: -53px!important;
+}
+
+.timeline > li {
+    min-height: 100px!important;
+}
+
+.timeline > li {
+    margin-bottom: 50px!important;
+}
+
+section {
+    padding: 70px 0 0!important;
+}
+
+.Fontcolr{
+    /*background-color:#82e4b2;*/
+    color:white !important;
+}
+
+.divstyle{
+    
+box-shadow: 2px 2px 20px 0px rgba(90, 17, 33, 0.21);
+border-radius: 5px;
+height: 200px;
+background-color:white;
+}
+.divstyle1{
+    
+box-shadow: 2px 2px 20px 0px rgba(90, 17, 33, 0.21);
+border-radius: 5px;
+height: 293px;
+background-color:white;
+}
+.innerdivstyle{
+    padding: 17px;
+padding-left: 138px;
+ margin-bottom: 7px;
+}
+.imgbox{
+    width: 92px;
+    height: 87px
+}
+.divatbuttom{
+        margin-top: 27px
+}
+.arbbstyle{
+    color: #4a4a4a;
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 170%;
+    font-family:Open Sans, sans-serif !important;
+/*color: black;
+      padding-left: 19px;
+    padding-right: 17px;
+    text-align: center;
+    font-size: smaller;*/
+}
+.rowmargin{
+    margin-left: 10px;
+    margin-right: 10px;
+        /*background-color: aliceblue;*/
+        margin-top: 6px;
+}
+.rowmargin1{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.paddingLeftRight{
+
+    padding-left:30px !important;
+    padding-right:30px !important;
+}
+
+
+.pright0 {
+		padding-right: 0px !important;
+	}
+	.pleft0 {
+		padding-left: 0px !important;
+	}
+    .box-yellow {
+	border-color: #fbb147 !important;
+}
+.box-green {
+	border-color: #58ba57 !important;
+}
+.box-blue {	
+	border-color: #059dde !important;
+}
+.box-orange {
+	border-color: #f16834 !important;
+}
+.boxsec {
+	border:8px solid transparent;
+	font-size: 40px;
+	/* text-transform: uppercase; */
+	margin-bottom: 10px;
+    color: #767676;
+}
+.boxsec i{width: 64px; height: 64px; margin-top: 10px;}
+.text-bold {
+    font-weight: bold;
+}
+.boxsectxt {
+    font-size: 25px;
+    font-weight: 600;
+}
+/*-------------*/
+    .hd {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #767676;
+        text-align: left !important;
+    }
+    .description-txt {
+    margin-bottom: 40px;
+    color :#333333;
+        font-size: 14.4px !important;
+        /*text-align:justify;*/
+        text-align:left !important;
+}
+
+    @media (min-width: 768px) {
+        .imgchoose {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+        }
+    }
+
+    .actnbar {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 55px;
+        color:#333333;
+        padding-bottom:20px;
+    }
+
+    .list-image {
+    padding: 0px;
+}
+    .mbottom0 {
+    margin-bottom: 0px;
+}
+    .thumbnail {
+        display: block;
+        padding: 4px;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .img-size {
+        width: 92px !important;
+        height: 87px !important;
+        border: 0px !important;
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+    }
+    .min-height{
+        min-height:200px;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .navbar-inverse {
+        background-color: #fff;
+    }
+    .carousel {
+    position: relative;
+}
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+    
+   
+    .carousel{
+    position:relative
+}
+.carousel-inner{
+    position:relative;
+    width:100%;
+    overflow:hidden
+}
+.carousel-inner>.item{
+    position:relative;
+    display:none;
+    -webkit-transition:.6s ease-in-out left;
+    -o-transition:.6s ease-in-out left;
+    transition:.6s ease-in-out left
+}
+.carousel-inner>.item>a>img,.carousel-inner>.item>img{
+    line-height:1
+}
+
+.closeme{
+	float:right;
+	text-align:center;
+    width:26px;
+    height:26px;
+    cursor:pointer;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	padding:2px;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #f33030;
+    font-weight: bold;
+}
+
+@media all and (transform-3d),(-webkit-transform-3d){
+    .carousel-inner>.item{
+        -webkit-transition:-webkit-transform .6s ease-in-out;
+        -o-transition:-o-transform .6s ease-in-out;
+        transition:transform .6s ease-in-out;
+        -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+        -webkit-perspective:1000px;
+        perspective:1000px
+    }
+    .carousel-inner>.item.active.right,.carousel-inner>.item.next{
+        left:0;
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+    .carousel-inner>.item.active.left,.carousel-inner>.item.prev{
+        left:0;
+        -webkit-transform:translate3d(-100%,0,0);
+        transform:translate3d(-100%,0,0)
+    }
+    .carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right{
+        left:0;
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+}
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{
+    display:block
+}
+.carousel-inner>.active{
+    left:0
+}
+.carousel-inner>.next,.carousel-inner>.prev{
+    position:absolute;
+    top:0;
+    width:100%
+}
+.carousel-inner>.next{
+    left:100%
+}
+.carousel-inner>.prev{
+    left:-100%
+}
+.carousel-inner>.next.left,.carousel-inner>.prev.right{
+    left:0
+}
+.carousel-inner>.active.left{
+    left:-100%
+}
+.carousel-inner>.active.right{
+    left:100%
+}
+.carousel-control{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:15%;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(0,0,0,.6);
+    background-color:rgba(0,0,0,0);
+    filter:alpha(opacity=50);
+    opacity:.5
+}
+.carousel-control.left{
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image:-o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat:repeat-x
+}
+.carousel-control.right{
+    right:0;
+    left:auto;
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image:-o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat:repeat-x
+}
+.carousel-control:focus,.carousel-control:hover{
+    color:#fff;
+    text-decoration:none;
+    filter:alpha(opacity=90);
+    outline:0;
+    opacity:.9
+}
+.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{
+    position:absolute;
+    top:50%;
+    z-index:5;
+    display:inline-block;
+    margin-top:-10px
+}
+.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{
+    left:50%;
+    margin-left:-10px
+}
+.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{
+    right:50%;
+    margin-right:-10px
+}
+.carousel-control .icon-next,.carousel-control .icon-prev{
+    width:20px;
+    height:20px;
+    font-family:serif;
+    line-height:1
+}
+.carousel-control .icon-prev:before{
+    content:'\2039'
+}
+.carousel-control .icon-next:before{
+    content:'\203a'
+}
+.carousel-indicators{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    z-index:15;
+    width:60%;
+    padding-left:0;
+    margin-left:-30%;
+    text-align:center;
+    list-style:none
+}
+.carousel-indicators li{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:1px;
+    text-indent:-999px;
+    cursor:pointer;
+    background-color:#000\9;
+    background-color:rgba(0,0,0,0);
+    border:1px solid #f16834;
+    border-radius:10px
+}
+.carousel-indicators .active{
+    width:12px;
+    height:12px;
+    margin:0;
+    background-color:#fff
+}
+.carousel-caption{
+    position:absolute;
+    right:15%;
+    bottom:20px;
+    left:15%;
+    z-index:10;
+    padding-top:20px;
+    padding-bottom:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(0,0,0,.6)
+}
+.carousel-caption .btn{
+    text-shadow:none
+}
+    @media screen and (min-width:768px) {
+        .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+            width: 30px;
+            height: 30px;
+            margin-top: -10px;
+            font-size: 30px;
+        }
+
+        .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+            margin-left: -10px;
+        }
+
+        .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+            margin-right: -10px;
+        }
+
+        .carousel-caption {
+            right: 20%;
+            left: 20%;
+            padding-bottom: 30px;
+        }
+
+        .carousel-indicators {
+            bottom: 20px;
+        }
+    }
+
+    .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+          
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  /*This is for pop up scroll*/
+  .table-fixed thead {
+  width: 100%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+a:hover
+{ 
+  color:#fed136 !important;
+}
+.navbar-nav{
+    float:left !important;
+}
+.navbar-custom.affix .navbar-collapse{
+    background:rgba(255,255,255,1);
+    box-shadow:0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.navbar-right-righthead_ul2{
+    float:right !important;
+    margin:0 !important;
+    margin-right:15px !important;
+}
+.navbar-right-righthead_ul3{
+    float:right !important;
+    margin-top:0 !important;
+    margin-right:150px !important;
+}
+.navbar-custom .nav > li > a{
+    color:#000 !important;
+}
+.navbar-custom.affix .nav > li > a{
+    color:#000 !important;
+}
+.mid_logo{
+    position: absolute;
+    top:10px;
+    left: 50%;
+    margin-left: -90px;
+}
+.left_logo{
+    position: absolute;
+    top:10px;
+    left: 18%;
+    margin-left: -90px;
+}
+.right_logo{
+    position: absolute;
+    top:-11px;
+    right: 0%;
+    
+}
+.Logoimg-size > img {
+        //width: 82px !important;
+        //height: 77px !important;
+        /*border: 0px !important;*/
+        /*margin-top: 5px !important;
+        margin-bottom: 10px !important;*/
+		width:auto;
+		max-height:50px;
+        }
+
+        .myDiv {
+               //border: 5px outset red;
+               //background-color: lightblue;
+               text-align:left;
+               padding-left:80px;
+               width: 100%;
+              }
+			  
+			  
+			  .apppanelnew{
+					
+					background-color: #0000009e;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+			  }
+			  
+			  
+			  
+		.contctbox{
+		
+			margin:0px !important;
+			padding:5px !important;
+		}
+			  
+
+    </style>
+
+
+</head>
+<body onload="window.document.frmDefault.UserName.focus(); ">
+    
+
+    <!--font Size content-->
+    
+
+
+<noscript>
+  <div style="background-color:White;" class="mywrapper" >
+      <div style="margin:3% 3% 3% 3%;">
+
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <u><span style='font-size: 22.0pt; font-family: "Verdana","verdana"'>JavaScript is  disabled in your browser</span> </u>
+            </p>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                Setting to enable javascript
+            </h2>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                1. Chrome
+            </h2>
+      
+            <p  style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>1.Click the Chrome menu Chrome menu in
+                    the top right hand corner of your browser Select Settings
+                    <br />
+                    2.Click Show advanced settings
+                    <br />
+                    3.Under the "Privacy" section, click the Content settings button.
+                    <br />
+                    4.In the "Javascript" section, select "Allow all sites to run JavaScript (recommended)"
+                    <br />             
+                </span>
+            </p>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                2. Mozila Firefox
+            </h2>
+            <p  style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>In Firefox, you can configure whether JavaScript
+                    in web pages is permitted to execute or not. To allow JavaScript in Firefox:
+                    <br />
+                    1.At the top of the Firefox window, click on the Firefox button and then select
+                    Options.At the top of the Firefox window, click on the Tools menu and then select
+                    Options.On the menu bar, click on the Firefox menu and select Preferences....At
+                    the top of the Firefox window, click on the Edit menu and select Preferences.
+                    <br />
+                    2.Click the menu button New Fx Menu and choose Options.Preferences.
+                    <br />
+                    3.Enable JavaScript: Select this option to permit JavaScripts to execute on your
+                    computer.
+                    <br />
+                    4.To change advanced settings, click Advanced….
+                     <br />
+             
+               
+            </p>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                3. Internet  Explorer
+            </h2>
+            <p  style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","Verdana"'>Enable or disable Javascript in Internet
+                    Explorer 11 using these easy steps.:
+                    <br />
+                    1.Select the Gear in the upper-right corner of the screen or the “Tools” menu if
+                    you have the menu bar enabled, then select “Internet Options“.
+                    <br />
+                    2.Select “Security” > “Internet” > “Custom level…“
+                    <br />
+                    3.Scroll down to “Active Script” and select the radio button to “Enable” or “Disable”
+                    it. You may also opt for IE11 to “Prompt” you to allow scripts to run.
+                    <br />             
+                    4.Scroll down to "Downloads" section, enable "Font Download" 
+                    <br />
+                    5.Select “OK“, then “OK” again. 
+                    <br /></span>
+            </p>
+       
+       
+            <div style="text-align:center;font-family:Verdana;font-weight:bold;">After attempting recommended settings Please &nbsp;<a href="Default.aspx" >Click Here <i class="fa fa-refresh fa-2x"></i></a> <br /> <br /></div>
+        
+        </div>
+  </div>
+</noscript>
+
+<div  id="compatibility"  style="display:none;background-color:White;border-radius:10px;" class="mywrapper">
+      <div style="margin: 3% 3% 3% 3%;" >
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>&nbsp;</span></p>
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+               </p>
+            <h2>
+                This application does not support compatibility view mode. Request you to change
+                the mode of compatibility view by using below given details</h2>
+           <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                1. IE11
+            </h2>
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>1.In Internet Explorer, press the Alt
+                    key to display the Menu bar, or press and hold the address bar and select Menu bar.
+                    <br />
+                    2.Click Tools and select Compatibility View settings.
+                    <br />
+                    3.Select google.com under "Websites you've added to Compatibility View."
+                    <br />
+                    4.Click Remove. </span>
+            </p>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                2. IE10
+            </h2>
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>1.In Internet Explorer, press the Alt
+                    key to display the Menu bar, or press and hold the address bar and select Menu bar.
+                    <br />
+                    2.Click Tools and select Compatibility View settings.
+                    <br />
+                    3.Select google.com under "Websites you've added to Compatibility View."
+                    <br />
+                    4.Click Remove. </span>
+            </p>
+            <h2 style='text-align: justify; text-justify: inter-ideograph'>
+                3. IE9
+            </h2>
+            <p style='text-align: justify; text-justify: inter-ideograph; line-height: normal'>
+                <span style='font-family: "Verdana","verdana"'>1.Click Tools and select Compatibility
+                    View settings.
+                    <br />
+                    2.Select google.com under "Websites you've added to Compatibility View."
+                    <br />
+                    3.Click Remove. </span>
+            </p>            
+            <br />
+              
+    <div style="text-align:center;font-weight:bold;font-family:Verdana;">After attempting recommended settings Please&nbsp;<a href="Default.aspx" > Click Here <i class="fa fa-refresh fa-2x"></i></a> <br /> <br /></div>           
+            
+  </div> 
+     
+</div>
+
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style="padding:10px 0px; background-color:white;">
+        <div class="container" style="margin-left:4px;padding-left:4px;padding-right:2px;width:100%">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            
+            
+             <div class="navbar-header page-scroll">
+                  
+                    <!-- <div style="float:left; margin-top:-18px;">
+                    <a target="_blank" href="https://meity.gov.in/">
+                    <img  alt="NeGD" src="https://svpnpa.lms.gov.in/Content/Images/bharat_logo.png"></a>
+                    </div> -->
+                  
+                    <div style="float:left">
+                     <div data-ride="carousel" class="carousel slide carousel-fade" id="carousel-example-generic">
+
+
+          <!-- Wrapper for slides -->
+
+			<div role="listbox" class="carousel-inner">
+                            <div class="item active" style="float:left; margin-top:0px;">
+                                   <a target="_blank" href="https://svpnpa.lms.gov.in/default.aspx" class="Logoimg-size">
+                              <img  alt="logo" src="https://svpnpa.lms.gov.in/WCR/WCRClientInfo/FrontLogos/default/logo.png"></a>
+                            </div>
+                          </div>
+
+                                            </div>
+                      </div>
+
+                 
+                 <button style="margin-right:55px; margin-top:0px" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                 </button>
+
+            </div>
+
+                
+
+            <!-- Collect the nav links, forms, and other content for toggling navbar-right -->
+             
+              <div class="mid_logo">
+                  
+                   <a target="_blank" href="https://lms.gov.in/">
+              <img height="50" width="180" alt="NeGD" src="https://svpnpa.lms.gov.in/Content/Images/negd.png"></a>
+              </div>
+            
+   
+		    <div  class="hidden-sm hidden-xs" style="float:right;margin-right:120px; margin-top:-15px;">     
+
+                       <a target="_blank" id="leftlogoanchor" href="https://www.digitalindia.gov.in/">
+                       <img  alt="Digital India" id="leftlogoimage" src="https://svpnpa.lms.gov.in/Content/Images/degital.png"></a> 
+
+
+                    </div>
+                    
+				  <!-- <div class="hidden-sm hidden-xs right_logo">                  
+					   <a target="_blank" href="https://www.negd.gov.in/">
+						<img  alt="NeGD" src="https://svpnpa.lms.gov.in/Content/Images/right_negd.png"></a>
+				  </div> -->
+            
+             
+                   <!-- <div style="float:left;">
+                    <img  alt="G2" style="height:45px;" src="https://svpnpa.lms.gov.in/Content/Images/G2.png">
+                    </div> -->
+
+          
+            <!-- /.navbar-collapse -->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:white;">
+                 <!-- <ul class="nav navbar-nav navbar-right-righthead navbar-right-righthead_ul2">
+                
+                            <li style="padding-top: 12px;">
+
+
+&nbsp;&nbsp;<select name=SelectedCulture id="SelectedCulture"  onchange="PersonalizeCulture();ClearError(this.id);"> <option title="English"  value="en-US" selected="">English</option><option title="Hindi"  value="hi-IN">हिन्दी</option></select>|</li>  
+                    
+               
+            </ul> -->
+                
+                <ul class="nav navbar-nav  navbar-right-righthead" style="float:right !important">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>                
+                    
+					   
+					
+                    <!-- <li>   
+                      <a onclick="hidemenu()" class="page-scroll" href="WebinarDetails.aspx" style="color:black;">Webinar</a>    
+                        </li> -->
+                    
+                        <li id="HomeLink">
+                            
+                                 <a onclick="hidemenu()" class="page-scroll" href="Home.aspx">Home</a>
+                             
+                        </li>
+                    
+                    
+                        <li>
+                            
+                                <a onclick="hidemenu()" class="page-scroll" href="#contact">Contact Us</a>
+                            
+                        </li>
+ 		<li>
+                   
+					  
+                                <a onclick="hidemenu()" class="page-scroll"  href="javascript:Open_popup()" >Feedback</a>
+                            
+					 
+                </li>   
+                    
+                                           
+                            <!-- <li>
+                                
+                                    <a onclick="hidemenu()" class="page-scroll" href="javascript:ActionHandler('valdoforward/NwRgstrtn')">SIGN UP</a>
+                                
+                            </li>                         -->
+                    
+                                <!-- <li>
+                                    <a onclick="hidemenu()" class="page-scroll"  href="javascript:SSOLogin()">Login</a>
+                                </li>
+                         -->
+                        <!-- <li style="padding-top: 15px;">
+
+ -->
+<script type="text/javascript">
+ 
+    jQuery(document).ready(function ($) {
+         measureUnit = "px", minSize = 1, minStyleSize = 10, maxSize = 6, maxStyleSize = 18, startSize = 1, startStyleSize = 10, stepSize = 1, stepStyleSize = 2;
+
+
+        // jQuery("#incfont").click(function () {
+        //     increaseFontSize(1, 1);
+        // });
+
+        // jQuery("#decfont").click(function () {
+        //     decreaseFontSize(-1, -1);
+        // });
+
+        // jQuery("#norfont").click(function () {
+        //     resetFonSize();        
+        // });
+
+    });
+
+
+    function searchTags(e, t) {
+        for (var n = new Array, a = new Array, l = 0, i = "", r = 0; r < e.length; r++)
+            if (i = e[r].nodeName, e[r].hasChildNodes())
+                if (1 == e[r].childNodes.length && "#text" == e[r].childNodes[0].nodeName) n[l++] = e[r];
+                else {
+                    a = searchTags(e[r].childNodes, t + 1);
+                    for (var o = 0; o < a.length; o++) n[l++] = a[o];
+                    n[l++] = e[r]
+                } else n[l++] = e[r];
+        return n
+    }
+
+
+</script>
+<!-- <div>
+<a id="decfont" href="#" style="color:orange; font-weight:bold;" title="Decrease font size">-A</a> 
+<a id="norfont" href="#" style="color:orange; font-weight:bold;" title="Reset font size">A</a> 
+<a id="incfont" href="#" style="color:orange; font-weight:bold;" title="Increase font size">+A</a>
+
+
+</div> -->
+
+</li> 
+                    
+                  
+                    
+
+                </ul>
+            
+           
+                                
+
+                 </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+  
+
+             
+        <!-- Indicators -->
+       
+
+        <!-- Wrapper for slides -->
+
+              
+        
+           
+           
+       
+      
+
+ 
+
+       
+
+    <!-- Header -->
+
+	
+    <header id="myheader"  >
+         <div id="loginContainer" class="container"  >
+
+            
+<!-- <form class="form-horizontal" name="frmDefault" id="frmDefault" method="post" autocomplete="off" onSubmit="return false" style="" > -->
+<input type="hidden" name="Mode" id="Mode"/>
+<input type="hidden" name="AuthKey" id="AuthKey" value="94542050337e465ba96d2e6163830733"/>
+
+
+
+            <input type="password" style="width: 0; height: 0; visibility: hidden; position: absolute; left: 0; top: 0;" />
+
+            
+<input type="hidden" name="HardCodedCorporateId" id="HardCodedCorporateId" value="83">
+            
+<input type="hidden" name="RememberMe" id="RememberMe" value="">
+            
+<input type="hidden" name="SelectedCulture" id="SelectedCulture" value="">
+
+            
+            <div class="inner-bg" style="padding-bottom:4px !important;" >
+                <div class="container">
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <h4>Privacy Policy</h4>
+                            <div style="height: 300px; overflow-x: hidden; overflow-y: auto;">
+                                <p style="color: #555; font-size: 12px;"></p>
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-default" data-popup-close="popup-1">Close</button>
+                            </p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            
+                            <div class="description">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+						<div class="col-sm-3 form-box">
+						
+						</div>
+					
+                        <div class="col-sm-6 form-box">
+							
+                            <div style="font-family:Montserrat" class="form-top">
+								<span class="closeme" id="myclosebutton" onclick="hidelogin()" >X</span>
+                                <div style="text-align:center;" >
+                                    <h3>Welcome To krystal Learning Portal</h3>
+                                    <p>Please enter your ID Number and password to login:</p>
+                                </div>
+                                
+
+                            </div>
+                            <div style="font-family:Montserrat; padding-bottom:10px;" class="form-bottom">
+
+                              <!-- <div id="login">
+                                <div class="login-title blue-gradient"><i class="fas fa-lock"></i>Sign in</div>
+                              
+                                <form action="" method="POST" id="login-form">{% csrf_token %}
+                                  <div class="form-group px-3">
+                                      <label for="username_id"><i class="fas fa-address-card"></i>ID Number</label>
+                                      <input type="text" name="username" id="username_id" class="form-control" required>
+                                      <div id="message-wrapper"></div>
+                                  </div>
+                                  <div class="form-group px-3">
+                                      <label for="password_id"><i class="fas fa-key"></i>Password</label>
+                                      <input type="password" name="password" id="password_id" class="form-control" required>
+                                  </div>
+                                  {% if form.errors %}
+                                        <span class="text-danger"><i class="fas fa-exclamation-circle"></i> Invalid ID & Password.</span><br>
+                                  {% endif %}
+                              
+                                  <button type="submit" class="btn btn-primary" id="login-btn"><i class="fas fa-sign-in-alt"></i><small> SIGN IN</small></button>
+                                </form>
+                                <br>
+                                <a href="{% url 'password_reset' %}" class="link">Forgot password ?</a>
+                              </div> -->
+                              
+
+
+
+
+
+
+
+
+
+
+                            {% if form.errors %}
+                                 <span class="text-danger"> Invalid ID & Password.</span><br>
+                            {% endif %}
+
+                            <form action="" method="POST" id="login-form2">{% csrf_token %}
+                                <div class="form-group">
+                                    <input name="username" type="text" id="username_id" tabindex="1" class="form-control" autocomplete="off" placeholder="ID Number" />
+                                </div>
+                                <div class="form-group">
+                                    <input name="password" type="password" id="password_id" tabindex="2" class="form-control" autocomplete="off" placeholder="Password" />
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-lg btn-primary" id="login-btn-2"> SIGN IN</button>
+                                </div>
+                            </form>
+
+
+                                
+                                <div class="form-group">
+                                    <a role="button" tabindex="4" style="color: white;" href="{% url 'password_reset' %}">Forgot Password</a>
+                                </div>
+                                
+                                <!-- <div class="form-group">
+                                    <span><a role="button" tabindex="5" style="color: orange;" href="javascript:ActionHandler('valdoforward/NwRgstrtn')">Don't have an account? Create one</a></span>
+                                </div> -->
+                                
+                                <div class="form-group">
+                                    <span></span>
+                                </div>
+                               
+
+                                
+                            </div>
+							
+							
+							<!-- <div class="row apppanelnew hidden-md hidden-lg" id="apppanelnew" >
+								<div class="col-sm-12 " style="margin-top:15px; margin-bottom:15px;">
+									<span style="font-family:Montserrat" >Download NeGDLMS Mobile App</span>
+								
+								</div>
+								<div class="col-md-2 hidden-sm hidden-xs">
+									
+								</div>
+								
+								<div class="col-md-3 col-sm-6  col-xs-6" >
+									<a target="_blank" href="https://play.google.com/store/apps/details?id=net.gcsolutions.negdlms">
+										<img  alt="NeGD" style="width:120px; height:36px;" src="https://svpnpa.lms.gov.in/Content/Images/playstore_2.png">
+									</a>
+								
+								</div>
+								
+								<div class="col-md-2 hidden-sm hidden-xs">
+									
+								</div>
+								
+								<div class="col-md-3 col-sm-6 col-xs-6">
+									<a target="_blank" href="https://apps.apple.com/in/app/negd-lms/id1495950739">
+										<img  alt="NeGD" style="width:120px; height:36px;" src="https://svpnpa.lms.gov.in/Content/Images/ios_1.png">
+									</a>
+								</div>
+								
+								<div class="col-md-2 hidden-sm hidden-xs">
+									
+								</div>
+								
+							</div> -->
+							
+                        </div>
+						<div class="col-sm-3 form-box">
+						
+						</div>
+						
+						
+                    </div>
+					
+					
+					
+                </div>
+                <br />
+                <br />
+                <br />
+
+            </div>
+             <!-- <div id="apppanel" class="hidden-sm hidden-xs" >
+                   <div style="position:absolute;margin-top:-80px;margin-left:950px;font-size: 14.5px; font-weight:normal !important;">Download NeGDLMS Mobile App</div>
+						<div style="position:absolute; margin-top:-50px; margin-left:920px;">
+                  
+							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.gcsolutions.negdlms">
+							<img  alt="NeGD" style="width:120px; height:36px;" src="https://svpnpa.lms.gov.in/Content/Images/playstore_2.png"></a>
+						</div>
+						<div style="position:absolute; margin-top:-50px; margin-left:1055px;">
+                  
+							<a target="_blank" href="https://apps.apple.com/in/app/negd-lms/id1495950739">
+							<img  alt="NeGD" style="width:120px; height:36px;" src="https://svpnpa.lms.gov.in/Content/Images/ios_1.png">
+							</a>
+						</div> -->
+					</div>
+			</div>
+    </header>
+    <div class="col-lg-12 text-center" style="background-color:white;height:25px;"><div class="col-lg-2 text-left" style="background-color:white;height:25px;">News</div><div class="col-lg-10 text-left"><marquee direction="left" height="25" bgcolor="white">floating news to be uploaded.</marquee></div></div>
+    <!-- Contact Section -->
+    <section id="contact">
+        
+        	
+         
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                </div>
+               
+                <div class="col-lg-6 text-left" style="color: white; text-transform: none;">
+                    <div></div>
+                    <p>test address,<br />test address.<br />Phone:91-00-00000000 <br />Fax:91-00-00000000<br><br>For any query or concern you may raise your request on following Support<br> <span style="color: #ffcc00;"><a style="color: #ffcc00;" href="../Home1.aspx"></a></span><br> Mail us at:<span style="color: #ffcc00;"><a style="color: #ffcc00;" href="mailto:example@gmail.com">example@gmail.com</a>,</span></p>
+                </div>
+                <div class="col-lg-6 text-left" style="color: white; text-transform: none;">
+                    <div></div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- <footer style="padding: 5px; background-color: black;">
+        <div class="container">
+            Brand and toggle get grouped for better mobile display
+
+            
+                <div class="col-sm-4">
+					
+                    <a style=" display:table-cell;" target="_blank" href="http://digitalindia.gov.in/">
+                        <img height="50" width="180" alt="Digital India" src="https://svpnpa.lms.gov.in/Content/Images/digital-india-logo.png"></a>
+
+                    <a style=" display:table-cell;" target="_blank" href="http://meity.gov.in/">
+                        <img height="50" width="180" alt="Deity" src="https://svpnpa.lms.gov.in/Content/Images/Meity-logo.png"></a>
+
+                </div>
+                <div class="col-sm-3">
+                    
+
+
+
+
+
+
+
+
+
+                  
+
+                </div>
+                <div class="col-sm-5" style="text-align:right; color:white;">
+                    <p style="font-size:12px !important" >Design &amp; Developed By National e-Governance Division,<br />
+                    4th Floor, Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi:110003<br />
+                    Email id-<span style="color: #ffcc00;"><a style="color: #ffcc00;" href="mailto:lmsadmin@digitalindia.gov.in">lmsadmin@digitalindia.gov.in</a></span> Phone No. : +91-11-24303785/87
+                     </p>
+                </div>
+
+           
+        </div>
+    </footer> -->
+
+
+
+    
+
+    <script>
+        $(document).ready(function () {
+           
+            var bannerCount =0;
+            if (bannerCount > 0) {
+                //$("#loginContainer").css('margin-top', "-557px");
+				
+				var cid = "83";
+				
+                //alert(cid);
+			
+				document.getElementById("myheader").style.position = "absolute";
+				document.getElementById("myheader").style.top = "0";
+				document.getElementById("myheader").style.paddingTop = "50px";
+				document.getElementById("myheader").style.width = "100%";
+				document.getElementById("myheader").style.backgroundImage = "none";
+				document.getElementById("myheader").style.backgroundColor = "#00000085";
+				document.getElementById("myheader").style.display = "none";
+				
+				if(cid == "107" || cid == "154" || cid == "175" || cid == "1"){
+					
+					document.getElementById("myheader").style.display = "block";
+					document.getElementById("myclosebutton").style.display = "none";
+					
+				}
+				else{
+					
+				}
+				
+				
+				
+				
+				
+				
+            }
+			else{
+				document.getElementById("myclosebutton").style.display = "none";
+				
+			}
+        });
+
+
+    </script>
+
+    
+
+    <div class="popup" data-popup="popup-3" id="popup-3">
+        <div class="popup-inner">
+            <h4 style="text-align: center;">This browser version is not supported.Please use browser as suggested below :- <br/> 1) InternetExplorer > 10.0 <br/> 2) Chrome > 58.0 <br/> 3) Firefox > 53.0 <br/> 4) Safari > 6.0</h4>
+            <div style="height: 350px; overflow-x: auto; overflow-y: auto;">
+                <p style="color: #555; font-size: 12px;">
+                </p>
+            </div>
+
+            <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
+        </div>
+    </div>
+
+
+
+    <div id="divShowPopUp" class="popup" data-popup="popup-3" >
+        <div class="popup-inner">
+            <h3 style="text-align: center;">Feedback</h3>
+            <div style="height: 450px; >
+                <p style="color: #555; font-size: 12px;">
+
+                     <div class="row">
+                       <div   class="myDiv">
+                           
+                           <div class="form-group required"><label for="PickList_Name"  class="col-sm-4 control-label">Name</label></div>
+                            <div class="col-sm-8 buttonwrapper"><input name="PickList_Name" type="text" id="PickList_Name" tabindex="7" class="form-control" /></div>
+                               
+                           </div>
+                     </div>
+
+
+                    <div class="row">
+                       <div class="myDiv">
+                           <div class="form-group required"><label for="PickList_Email" class="col-sm-4 control-label">Email</label></div>
+                            <div class="col-sm-8 buttonwrapper"><input name="PickList_Email" type="text" id="PickList_Email" tabindex="8" class="form-control" /></div>
+
+                           </div>
+                     </div>
+
+
+                    <div class="row">
+                       <div class="myDiv">
+                           <div class="form-group required"><label for="PickList_Description" class="col-sm-4 control-label">Description</label></div>
+                            <div class="col-sm-8 buttonwrapper"><textarea name="PickList_Description" id="PickList_Description" tabindex="9" rows="5" maxlength="300" class="form-control"></textarea></div>
+
+                           </div>
+                     </div>
+
+
+                    <div class="row">
+                       <div class="myDiv">
+                           <div class="form-group required"><label for="PickList_Mobile" class="col-sm-4 control-label">Contact</label></div>
+                           <div class="col-sm-2 buttonwrapper"><input name="TextCode" type="text" id="TextCode" tabindex="10" maxlength="4" class="form-control" placeholder="+91" style="width: 98px;" /></div>
+                            <div class="col-sm-6 buttonwrapper"><input name="PickList_Mobile" type="text" id="PickList_Mobile" tabindex="11" maxlength="15" class="form-control" /></div>
+
+                           </div>
+                     </div>
+
+
+
+                    <br />
+                       <div class="row">
+                       <div class="myDiv">
+                       
+                                    <div class="form-group required"><label  class="col-sm-4 control-label"></label></div>
+                                   <div class="col-sm-4 buttonwrapper"> <a role="button" id="btn-submit" style="color:black; tabindex="12" class="btn btn-lg btn-primary"   href="javascript:ActionHandler('valdoforward/Fdbck')">Save</a></div>
+                                
+
+                        </div>
+                     </div>       
+
+
+
+
+
+                </p>
+            </div>
+
+            <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
+        </div>
+    </div>
+
+
+	<div id="divShowSurveryPopUp" class="popup" data-popup="popup-3" >
+        <div class="popup-inner">
+            <h3 style="text-align: center;">Survey</h3>
+            <div style="height: 450px; >
+                <p style="color: #555; font-size: 12px;">
+                    <br /><br />
+                     <div class="row">
+                       <div   class="myDiv" style="text-align:center;">
+                           <img src="https://svpnpa.lms.gov.in/Content/Images/QRcode.png" />
+                           
+                           </div>
+                     </div>
+
+                    <br /><br />
+                    <div class="row">
+                       <div class="myDiv" style="text-align:center;">
+                           <a href="https://tinyurl.com/7RegionalWondersofIndia" target="_blank" style="color:blue;">https://tinyurl.com/7RegionalWondersofIndia</a>
+                           </div>
+                     </div>
+
+
+                </p>
+            </div>
+
+            <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

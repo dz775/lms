@@ -20,7 +20,7 @@ from result.models import TakenCourse
 from app.models import Session, Semester
 from .forms import StaffAddForm, StudentAddForm, ProfileUpdateForm, ParentAddForm
 from .models import User, Student, Parent
-
+from openpyxl import load_workbook
 
 def validate_username(request):
     username = request.GET.get("username", None)
@@ -177,7 +177,7 @@ def profile_update(request):
         request,
         "setting/profile_info_change.html",
         {
-            "title": "Setting | DjangoSMS",
+            "title": "Setting | ",
             "form": form,
         },
     )
@@ -230,7 +230,7 @@ def staff_add_view(request):
         form = StaffAddForm()
 
     context = {
-        "title": "Lecturer Add | DjangoSMS",
+        "title": "Lecturer Add | UAS",
         "form": form,
     }
 
@@ -257,7 +257,7 @@ def edit_staff(request, pk):
         request,
         "accounts/edit_lecturer.html",
         {
-            "title": "Edit Lecturer | DjangoSMS",
+            "title": "Edit Lecturer | UAS",
             "form": form,
         },
     )
@@ -271,7 +271,7 @@ class LecturerListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["title"] = "Lecturers | DjangoSMS"
+        context["title"] = "Lecturers | UAS"
         return context
 
 
@@ -321,7 +321,7 @@ def student_add_view(request):
     return render(
         request,
         "accounts/add_student.html",
-        {"title": "Add Student | DjangoSMS", "form": form},
+        {"title": "Add Student | UAS", "form": form},
     )
 
 
@@ -346,7 +346,7 @@ def edit_student(request, pk):
         request,
         "accounts/edit_student.html",
         {
-            "title": "Edit-profile | DjangoSMS",
+            "title": "Edit-profile | UAS",
             "form": form,
         },
     )
@@ -366,7 +366,7 @@ class StudentListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["title"] = "Students | DjangoSMS"
+        context["title"] = "Students | UAS"
         return context
 
 
@@ -397,3 +397,28 @@ class ParentAdd(CreateView):
 #             return redirect('student_list')
 #     else:
 #         form = ParentAddForm(request.POST)
+
+# @admin_required
+@login_required
+def import_from_excel(request):
+    if request.method == 'POST':
+        try:
+            excel_file = request.FILES['excel_file']
+            wb = load_workbook(excel_file)
+            ws = wb.active
+            errors=''
+            success,fail = 0,0
+            for row in ws.iter_rows(min_row=2, values_only=True):
+                id_no, first_name, last_name, email, address, phone, department, level = row
+                # print(id_no, first_name, last_name, email, address, phone, department, level)
+                data = {'username': id_no,'first_name': first_name,'last_name': last_name,'email': email,'address': address,'phone': phone,'department': department,'level': level,'password1':'password123','password2':'password123'}
+                form = StudentAddForm(data)
+                if form.is_valid():
+                    success += 1
+                    form.save()
+                else:
+                    errors += '\n;'+str(form.errors)
+                    fail += 1
+            return JsonResponse({'data':'success','success':success,'fail':fail,'errors':errors})
+        except Exception as e:
+            return JsonResponse({'data':str(e)})

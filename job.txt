@@ -1,0 +1,207 @@
+Interview
+
+
+Started my journey as a developer and realized my passion for VAPT/red team and joined the exciting world of breaking things. I have been doing it for 2 years now and helped multiple businesses improve their security
+
+I Started my journey as a developer and realized my passion for VAPT/red team and joined the exciting world of breaking things. I have been doing it for 2 years now and helped multiple businesses improve their security. Resillion sounds like the best place to work as it stands out remarkably among its competitors. I'm genuinely excited about the prospect of collaborating with the team
+
+——————————————————————————————————————
+Questions - 
+Owasp top 10
+Vapt steps
+what is http and https port num?
+what is the diff b/w http and https?
+what is ssl?
+what tools used for web VA?
+* Discuss a recent project or role.
+* Tell me about the most difficult bug you've fixed.
+* How does ARP work? How do I find out my IP address? What about IPv6? What is a "private" IP address?
+* I'm a non-technical person and I'd like to understand how e-mail works. Explain it to me.
+* 10 Gbps pipe is flooded by a distributed DoS. Fix it.
+* How do hubs work? Switches? Routers?
+* Describe how SSL works. What about TLS? What role do certificate authorities play?
+* What is in the /etc/shadow file?
+* What is a "threat model" and how would you design one?
+* Design a botnet C&C.
+* How does port scanning work? What about UDP, which is a connectionless protocol?
+* How would you secure a new Linux host? How would you secure 10,000 new Linux hosts?
+* Explain how the operating system of your choice boots. How does it install applications?
+* What is Filevault? LUKS? Bitlocker?
+* Would would you detect malware on a Linux host? How would you design malware to avoid detection?
+* What are some common standard file format for executables you're familiar with?
+* What is a shared library? How would you find out what shared libraries an application uses?
+* What is a kernel module?
+* Briefly describe how TCP works. What about IP?
+* What is a buffer overflow? How can it be used for malicious purposes?
+* I attempted to ssh to a host, but got a warning the host key doesn't match. What does this mean?
+* Symmetric vs asymmetric crypto? When is one prefered over the other and why?
+* Whats the difference between NTLM and LM
+* Explain <Insert one of the owasp top ten>
+* Why is it bad to use a non private address internally?
+* What do these flags do? If you dont know how do you find out?
+* Give the candidate a simple program, whats the problem? (think something along the lines of a php echo from get and thats it)
+* Is changing the port of a service security? If so or not why
+* If i say ms08-067 what does that mean to you?
+* why is leaving AXFR on your dns server bad? WTF is AXFR?
+* If a admin console isnt linked to on my websites homepage is it secure?
+* Bring up a webpage full of holes, find the {sql,xss,disclosure,command injection}
+* Whats a VPN?
+* Whats ISO/PCI/Sarbanes/Insert other relevant thing here (I mean relevant, if your a PCI DSS provider then they should know what PCI is)
+* Why is a flat network bad?
+* Whats group policy?
+* whats a sam file?
+* Lots of questions around common network services you see, whats netbios, smb, http, ftp,ssh,ntp etc etc
+
+
+——————————————————————————————————————
+Skills -
+Vmware,
+Linux, macOS, windows 
+Ctf
+
+
+Made  a malware to steal cookies and decrypt it
+Ddos scammers website
+Hacked into scammers website by osint, sql injection (deleted everything)
+RE botmaster and other applications 
+Fixed a open source dark web scraper
+Ccc mining 
+Chrome extensions
+—
+Nft project
+
+
+
+
+
+——————————————————————————————————————
+EXAMPLE - 
+Burp Suite, MetaSploit, Nmap, Nessus, Nikto, Skipfish, OpenVAS, etc
+Linux / Unix: Administration of Debian, Ubuntu, CentOS, and TrueNAS ,
+Windows: Server 2019, 2022, Office 365 Administration, Azure AD, working knowledge of Windows internals and Win32 API in relation to malware development 
+Firewalls: Cisco ASA, pfSense • Virtualization platforms: VN1Ware ESXi, VirtualBox, Hyper-V, Proxmox 
+Cloud Platforms: A\VS Certified and production experience with both GCP and Azure 
+Networking: Cisco IOS, NX-OS, Ciena SAOS 
+SIEM. Secuntv Onion, Splunk 
+Programming: Basic skills in Python, C/C++, VBA, Bash, PowerShell 
+Security Frameworks: Familiarity with OW ASP Top 10, and MITRE ATT&CK framework. 
+
+
+
+——————————————————————————————————————
+Tekdi Technologies
+dfcs technologies ltd + mail
+Rootsecured
+Bastionex Technologies Pvt. Ltd
+Experian
+miniOrange
+Natus Medical - own website ——————————————————————    rejected
+https://www.bmc.com/. —————————————————————————    rejected + again
+Synclature - linked easy apply
+Tata Consultancy Services - linked easy apply
+Black Box - linked easy apply/https://eoje.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/my-profile
+NielsenIQ - https://www.smartr.me/home?ftux=true#atb=1708067824620 + linkedin
+Xplor - https://www.smartr.me/home?ftux=true#atb=1708152965025  + linkiedin
+FPLE Technology Pvt Ltd - easy apply
+dazn.com - own website
+schneiderele.taleo.net - own web
+https://hackit.co/ - own web
+codewits.in - own	
+—
+Binary Global Limited - naukri.com + website     ————————————————— low package 17k/month
+https://securitybrigade.keka.com/careers/ - again
+https://claranet.jobs/uk/profile/. —————————————————————————— rejected
+https://forcepoint.wd1.myworkdayjobs.com/en-US/external-careers/userHome
+Tata Consultancy Services - LinkedIn
+https://fis.wd5.myworkdayjobs.com/en-US/SearchJobs/userHome
+https://sonyglobal.wd1.myworkdayjobs.com/en-US/SonyGlobalCareers/userHome
+Protectt.ai - expertia.ai/
+WILLWARE TECHNOLOGIES - expertia.ai/
+Jio - expertia.ai/. ——— https://g.co/kgs/rZcmdME
+codecnetworks.com - mail
+ACA Group - LinkedIn easy shit     —————————————————————————— rejected
+Qualitest - linkedin easy
+https://apply.workable.com/breachlock/j/B0735B8081/apply/?success
+https://www.varite.com/jobs-in-india/
+theecode - expertia.ai/
+https://begin-again-wipro.icims.com/jobs/3067418/cyber-security-analyst/job?mode=submit_apply
+https://jobs.getastra.com/jobs/Careers —————————————————————————— rejected
+ValueMentor Infosec Private Limited (SEZ) - glassdoor
+https://jobs.cvviz.com/valuementor/job_65848
+Hewlett Packard(hp) -  hp.wd5.myworkdayjobs.com
+Resillion - https://www.smartr.me/home?ftux=true#atb=1713130688114
+Minuscule Technologies Pvt Ltd - glassdoor internship paid
+GAC Solutions Inc - glass door
+https://careers.cult.fit/candidate/home
+CyberNX-Technologies - glassdoor easy apply 
+IQ-EQ -   glassdoor easy apply.           —————————————————————————— rejected
+Peneto labs Pvt Ltd - glassdor easy
+https://securseed.com/jobs/vapt-consultant/ - freelance
+https://www.vibeshr.com/ - MAIL
+Protecxo - linked easy.                           —————————————————————————— rejected
+https://tacsecurity.com/cyber-security-engineer/
+Area - Skills Developer - https://jobs.lever.co/aeratechnology
+Optimhire - expert.ai
+Prime Ideas Consultancy Services - expertia.ai
+https://sundewsolutions.com/career
+Protiviti - email
+securityhq - email.       —————————————————————— hr done waiting for tech round
+Mobitrail - naukri.com   ——————————————————————— low package 1.8lpa + performace bonus
+Security Delivery Associate - https://www.accenture.com/in-en/careers
+https://velsera.wd103.myworkdayjobs.com/en-US/Velsera/userHome
+Altered Security - LinkedIn easy apply  —————————————————————————————————— rejected
+ESDS Software Solution Limited - LinkedIn easy
+Uber9 Business Process Service Private Limited. - https://www.hirist.tech/j/vakilsearch-cyber-security-engineer-cissp-certified-5-8-yrs-1319747.html?ref=clp_k&jobpos=2&jobversion=2
+ShieldByte Infosec Pvt. Ltd.- LinkedIn easy
+PARALOK INFORMATION SECURITY PVT.LTD - https://www.kitjob.in/job/79475671/auo073-penetration-tester-vapt-mumbai/ + mail
+Cloud Counselage Pvt. Ltd. - LinkedIn easy
+BDO - LinkedIn easy
+Kroll - https://hcxs.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/my-profile
+sequretek - mail
+ UL Solutions - LinkedIn easy
+63moons - LinkedIn + mail
+https://www.aujas.com/consultant-web-application-security-thick-client
+Capgemini - https://career5.successfactors.eu/portalcareer?company=C0001123183P&clientId=jobs2web&lang=en_US&navBarLevel=MY_PROFILE&_s.crb=xwe72iiypqdbokyrr436U%252fe7pZZ6NTHLMpeHpJKg5sg%253d
+https://kratikal.com/career
+https://www.cloudsek.com/openings?gh_jid=4963767004
+https://seconize.co/careers/
+https://www.cloudsek.com/openings?gh_jid=4963767004
+Kitecyber - LinkedIn easy
+Curefit - house of cult - linked 
+LeadSquared - LinkedIn
+Ventura - Security Test Engineer - VAPT - https://www.hirist.tech/similar_jobs.php?id=1321514&status=single&success=11&pref=neuvoo
+Allied Boston Consultants India Pvt. Ltd - LinkedIn
+Qualysec Technologies Pvt Ltd - glassdoor + own website
+Resillion - glassdoor
+NETSACH GLOBAL - Expertin.ai, score -120
+Sky net secure - https://jobs.smartrecruiters.com/SkynetSecureSolutions/743999885031653-cyber-security-analyst
+—————————————https://www.foundit.in/seeker/dashboard?application_source=Organic&activeTab=applied-------------------------------
+Brose Group  - Sr. Analyst/ Engineer - SOC (Level 2)
+IRIS software - Senior Analyst - Information and Cyber Security
+Ceragon Networks - Cyber Security Analyst
+Computacenter - Associate Technical Analyst - Cyber Security Data Analyst
+----------------------------------------------------------------------------------
+Careerfit.ai - https://www.hirist.tech/similar_jobs.php?id=1321597&status=single&success=11&pref=neuvoo
+
+
+——————————————————————————————————————
+https://alignity.io/careers/  — https://in.jobrapido.com/jobpreview/287287268?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic
+https://jobsindia.deloitte.com/job/Mumbai-I-Think-RA-Cyber-DM-VAPT%2BRed-Teaming-Thane/23776244/
+https://www.glassdoor.co.in/job-listing/attack-surface-assessment-senior-analyst-deloitte-JV_IC2865319_KO0,40_KE41,49.htm?jl=1009156919871&utm_source=jobactivity&utm_medium=email&utm_content=jas-click-follow-up-recentjobs-jobpos1-1009156919871&utm_campaign=jas-click-follow-up&src=GD_JOB_AD&uido=F67F672C132B8EFF75B9D65480BAF8A7&ao=1136043&cs=1_4d5472d8&s=239&t=JA&pos=101&guid=0000018f0f606eb687c036c1e7e11f46&jobListingId=1009156919871&vt=e&cb=1713949929278&ctt=1713984000079
+ceragon.com
+Microsoft
+
+
+
+
+
+——————————————————————————————————————
+Job applying websites - 
+https://careers.fisglobal.com/us/en/apply?jobSeqNo=FIGLUSJR0268375EXTERNAL&step=1
+careers.fisglobal.com
+
+
+
+Resume scan - 
+https://www.jobscan.co/
+https://www.panna.ai/score/in1

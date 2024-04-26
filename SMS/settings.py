@@ -29,7 +29,8 @@ SECRET_KEY = "o!ld8nrt4vc*h1zoey*wj48x*q0#ss12h=+zh)kk^6b3aygg=!"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://*.ngrok-free.app']
 
 # change the default user models to our custom model
 AUTH_USER_MODEL = "accounts.User"
@@ -139,9 +140,9 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
     },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    # },
     {
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
@@ -204,5 +205,5 @@ REST_FRAMEWORK = {
 }
 
 # Strip payment config
-STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
-STRIPE_PUBLISHABLE_KEY = env("STRIPE_PUBLISHABLE_KEY")
+STRIPE_SECRET_KEY = "sk_test_51Lab8vSInR3N5o7kkRRVV5DgB27ie1YTnfVkNFCI9Ambo9cwKPoShOMd1PD7EPlmd1kOW1TfCq5kqwgbOzlgDgsT00agautsyu"
+STRIPE_PUBLISHABLE_KEY = "pk_test_51Lab8vSInR3N5o7kutcvoGSe94UeOjEqWWtTGElBOeHeezjzZTUDMtJ1muVGqE9pELc4ctFbrNyECSvqeJDdJ6x300SRaTTF1u"

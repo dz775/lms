@@ -9,7 +9,8 @@ from .views import (
         LecturerListView, StudentListView, 
         staff_add_view, edit_staff, 
         delete_staff, student_add_view, 
-        edit_student, delete_student, ParentAdd, validate_username, register
+        edit_student, delete_student, ParentAdd, validate_username, register,
+        import_from_excel
     )
 from .forms import EmailValidationOnForgotPassword
 
@@ -49,7 +50,7 @@ urlpatterns = [
     # path('profile/<int:pk>/change-password/', changePasswordView, name='change_password'),
 
     # ################################################################
-    # path('login/', LoginView.as_view(), name='login'),
+    path('login/', LoginView.as_view(), name='login'),
     # path('logout/', LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
 
     # path('password-reset/', PasswordResetView.as_view(
@@ -70,4 +71,5 @@ urlpatterns = [
     # ),
     #      name='password_reset_complete')
     # ################################################################
+    path('student/add/import', import_from_excel, name='import_from_excel'),
 ]
